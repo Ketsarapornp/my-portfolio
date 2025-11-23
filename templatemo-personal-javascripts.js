@@ -71,6 +71,12 @@ https://templatemo.com/tm-593-personal-shape
                             item.classList.add('animate');
                         }, index * 150);
                     });
+                      const items2 = entry.target.querySelectorAll('.portfolio2-item');
+                    items2.forEach((items2, index) => {
+                        setTimeout(() => {
+                            items2.classList.add('animate');
+                        }, index * 150);
+                    });
                 }
             });
         }, { threshold: 0.1 });
@@ -84,7 +90,14 @@ https://templatemo.com/tm-593-personal-shape
             if (portfolioSection) {
                 portfolioObserver.observe(portfolioSection);
             }
+              const portfolioSection2 = document.querySelector('.portfolio2-grid');
+            if (portfolioSection2) {
+                portfolioObserver.observe(portfolioSection2);
+            }
         });
+
+
+        
 
         // Enhanced smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
