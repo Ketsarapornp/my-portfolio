@@ -106,6 +106,9 @@ https://templatemo.com/tm-593-personal-shape
             });
         });
 
+        
+
+    
         // Enhanced form submission with better UX
         document.querySelector('.contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
